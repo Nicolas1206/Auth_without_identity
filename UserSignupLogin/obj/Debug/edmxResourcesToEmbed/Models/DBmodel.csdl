@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBuserSignupLoginModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBLUserInfo">
+    <Key>
+      <PropertyRef Name="IdUs" />
+    </Key>
+    <Property Name="IdUs" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UsernameUs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PasswordUs" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DBuserSignupLoginEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBLUserInfoes" EntityType="Self.TBLUserInfo" />
+  </EntityContainer>
+</Schema>
